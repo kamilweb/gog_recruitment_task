@@ -1,0 +1,51 @@
+header {
+  background: linear-gradient(to bottom, #ededed 0%,#dedede 100%);
+  box-shadow: 0 0 10px rgba(0,0,0,.6);
+  padding: 5px 0;
+  .container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.logo {
+  width: 52px;
+  position: relative;
+  left: -5px;
+}
+
+.cart__button {
+  display: flex;
+  border: solid #d4d4d4;
+  border-width: 0 1px;
+  background: white;
+  height: 55px;
+  margin-top: -5px;
+  margin-bottom: -5px;
+  padding: 20px 14px;
+  cursor: pointer;
+}
+
+.cart__button-number {
+  margin-left: 4px;
+  position: relative;
+  top: -2px;
+}
+
+.cart__wrapper {
+  position: absolute;
+  top: 100%;
+  right: 0;
+}
+
+.cart__top {
+  display: flex;
+}
+
+.cart__top-desc {
+  margin-right: auto;
+}
+
+
