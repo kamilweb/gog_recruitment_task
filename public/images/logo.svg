@@ -1,0 +1,83 @@
+<svg id="logo_classic" data-name="logo classic" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="49" height="42" viewBox="0 0 49 42">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c140 79.160451, 2017/05/06-01:08:21        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1 {
+        fill: #9d5630;
+        filter: url(#filter);
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #484848;
+        filter: url(#filter-2);
+      }
+    </style>
+    <filter id="filter" x="106" y="28" width="49" height="21" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dy="1" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="1.732"/>
+      <feFlood result="flood" flood-opacity="0.45"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feGaussianBlur result="blur-2" stdDeviation="0.333" in="SourceAlpha"/>
+      <feComposite result="composite-2"/>
+      <feComposite result="composite-3"/>
+      <feComposite result="composite-4"/>
+      <feFlood result="flood-2" flood-color="#00754d" flood-opacity="0.8"/>
+      <feComposite result="composite-5" operator="in" in2="composite-4"/>
+      <feBlend result="blend" in2="composite"/>
+      <feBlend result="blend-2" in="SourceGraphic"/>
+      <feImage preserveAspectRatio="none" x="111" y="33" width="39" height="11" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzkiIGhlaWdodD0iMTEiIHZpZXdCb3g9IjAgMCAzOSAxMSI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgZmlsbDogdXJsKCNsaW5lYXItZ3JhZGllbnQpOwogICAgICB9CiAgICA8L3N0eWxlPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJsaW5lYXItZ3JhZGllbnQiIHgxPSIxOS41IiB5MT0iMTEiIHgyPSIxOS41IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzAwOTA1ZSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjAuOTkyIiBzdG9wLWNvbG9yPSIjMDBjNzhjIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzAwYzc4YyIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iMzkiIGhlaWdodD0iMTEiLz4KPC9zdmc+Cg=="/>
+      <feComposite result="composite-6" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend-3" in2="blend-2"/>
+    </filter>
+    <filter id="filter-2" x="106" y="7" width="49" height="27" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dy="1" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="1.732"/>
+      <feFlood result="flood" flood-opacity="0.45"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feGaussianBlur result="blur-2" stdDeviation="0.333" in="SourceAlpha"/>
+      <feComposite result="composite-2"/>
+      <feComposite result="composite-3"/>
+      <feComposite result="composite-4"/>
+      <feFlood result="flood-2" flood-color="#6c36ad" flood-opacity="0.8"/>
+      <feComposite result="composite-5" operator="in" in2="composite-4"/>
+      <feBlend result="blend" in2="composite"/>
+      <feBlend result="blend-2" in="SourceGraphic"/>
+      <feImage preserveAspectRatio="none" x="111" y="12" width="39" height="17" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzkiIGhlaWdodD0iMTciIHZpZXdCb3g9IjAgMCAzOSAxNyI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgZmlsbDogdXJsKCNsaW5lYXItZ3JhZGllbnQpOwogICAgICB9CiAgICA8L3N0eWxlPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJsaW5lYXItZ3JhZGllbnQiIHgxPSIxOS41IiB5MT0iMTciIHgyPSIxOS41IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzdhM2RjNiIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNiNjVhZTIiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IGNsYXNzPSJjbHMtMSIgd2lkdGg9IjM5IiBoZWlnaHQ9IjE3Ii8+Cjwvc3ZnPgo="/>
+      <feComposite result="composite-6" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend-3" in2="blend-2"/>
+    </filter>
+  </defs>
+  <path id="COM" class="cls-1" d="M113,44a2.08,2.08,0,0,1-2-2V35a2.08,2.08,0,0,1,2-2h6v2h-5a1.277,1.277,0,0,0-1,1v5a1.277,1.277,0,0,0,1,1h5v2h-6Zm31,0h-2V35h-3a1.3,1.3,0,0,0-1,1v8h-2V35a2.109,2.109,0,0,1,2-2h12V44h-2V35h-3a1.3,1.3,0,0,0-1,1v8ZM131,33h-7a2.078,2.078,0,0,0-2,2v7a2.077,2.077,0,0,0,2,2h7a2.077,2.077,0,0,0,2-2V35A2.078,2.078,0,0,0,131,33Zm-1,2a1.275,1.275,0,0,1,1,1v5a1.275,1.275,0,0,1-1,1h-5a1.275,1.275,0,0,1-1-1V36a1.275,1.275,0,0,1,1-1h5Z" transform="translate(-106 -7)"/>
+  <path id="GOG" class="cls-2" d="M114,14a1.288,1.288,0,0,0-1,1v5a1.288,1.288,0,0,0,1,1h3v2h-4a2.1,2.1,0,0,1-2-2V14a2.1,2.1,0,0,1,2-2h7a2.1,2.1,0,0,1,2,2V27a2.1,2.1,0,0,1-2,2h-9V27h8a1.288,1.288,0,0,0,1-1V15a1.288,1.288,0,0,0-1-1h-5Zm20-2h-7a2.077,2.077,0,0,0-2,2v7a2.078,2.078,0,0,0,2,2h7a2.078,2.078,0,0,0,2-2V14A2.077,2.077,0,0,0,134,12Zm-1,2a1.275,1.275,0,0,1,1,1v5a1.275,1.275,0,0,1-1,1h-5a1.275,1.275,0,0,1-1-1V15a1.275,1.275,0,0,1,1-1h5Zm9,0a1.288,1.288,0,0,0-1,1v5a1.288,1.288,0,0,0,1,1h3v2h-4a2.1,2.1,0,0,1-2-2V14a2.1,2.1,0,0,1,2-2h7a2.1,2.1,0,0,1,2,2V27a2.1,2.1,0,0,1-2,2h-9V27h8a1.288,1.288,0,0,0,1-1V15a1.288,1.288,0,0,0-1-1h-5Z" transform="translate(-106 -7)"/>
+</svg>
