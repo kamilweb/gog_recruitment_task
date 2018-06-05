@@ -1,20 +1,22 @@
-import {ADD_GAME_TO_CART, REMOVE_GAME_FROM_CART} from "./actions";
+import { ADD_ALL_GAMES, ADD_GAME_TO_CART, REMOVE_GAME_FROM_CART } from "./actions";
 
 const initialState = {
-  games: []
+  gamesState: []
 };
 
-export const shoppingCard = (state = initialState.games, { type, payload }) => {
+export const shoppingCart = (state = initialState.gamesState, { type, addedGame, allGames }) => {
   switch (type) {
-    case ADD_GAME_TO_CART:
+    case ADD_ALL_GAMES:
       return {
-        ...state,
+        allGames
       };
-
-    case REMOVE_GAME_FROM_CART:
-      return {
-        ...state,
-      };
+    case ADD_GAME_TO_CART, REMOVE_GAME_FROM_CART:
+      state.allGames.map(game => {
+        if (state.allGames[addedGame.id].name === game.name) {
+          state.allGames[addedGame.id] = addedGame;
+        }
+      });
+      return { ...state };
 
     default:
       return state;
@@ -22,5 +24,5 @@ export const shoppingCard = (state = initialState.games, { type, payload }) => {
 };
 
 export const allReducers = {
-  games: shoppingCard,
+  gamesState: shoppingCart
 };

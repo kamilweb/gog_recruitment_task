@@ -1,4 +1,5 @@
 import React, {Component, Fragment} from "react";
+import {connect} from "react-redux";
 
 class Cart extends Component {
   state = {
@@ -13,6 +14,7 @@ class Cart extends Component {
 
   render() {
     const {cartActive} = this.state;
+    const {gamesInCartNumber} = this.props;
     return (
       <Fragment>
         <div className="cart__button" onClick={this.toggleCart}>
@@ -20,13 +22,13 @@ class Cart extends Component {
             <img className="game__img" src="images/basket.svg" alt="GOG.COM" />
           </div>
           <div className="cart__button-number">
-            0
+            {gamesInCartNumber ? gamesInCartNumber : 0}
           </div>
         </div>
         <div className="cart__wrapper">
           <div className="cart__top">
             <div className="cart__top-desc">
-              {`${0} ITEMS IN CART`}
+              {`${gamesInCartNumber ? gamesInCartNumber : 0} ITEMS IN CART`}
             </div>
             <div className="cart__top-price">
               price
@@ -45,4 +47,9 @@ class Cart extends Component {
     );
   }
 }
-export default Cart;
+
+const mapStateToProps = state => ({
+  // gamesInCartNumber: state.gamesState.length
+});
+
+export default connect(mapStateToProps)(Cart);
