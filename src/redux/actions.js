@@ -9,7 +9,7 @@ export const addAllGamesToStoreAction = (allGames) => ({
 
 export const addGameToCartAction = (game) => ({
   type: ADD_GAME_TO_CART,
-  addedGame: {
+  changedGame: {
     ...game,
     gameInCart: true
   },
@@ -17,7 +17,7 @@ export const addGameToCartAction = (game) => ({
 
 export const removeGameFromCartAction = (game) => ({
   type: ADD_GAME_TO_CART,
-  addedGame: {
+  changedGame: {
     ...game,
     gameInCart: false
   },
