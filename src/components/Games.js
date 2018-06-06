@@ -23,8 +23,9 @@ class Games extends Component {
               <div className="game__bottom">
                 <p className="game__name">{game.name}</p>
                 <div className="game__buttons">
-                  {game.gameInCart && <div className="game__button game__button-incart">IN CART</div>}
-                  {!game.gameInCart && (
+                  {game.gameInCart ? (
+                    <div className="game__button game__button-incart">IN CART</div>
+                  ) : (
                     <Fragment>
                       {game.discount && (
                         <div className="game__button game__button-discount">{`- ${game.discount}%`}</div>
