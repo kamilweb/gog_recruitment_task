@@ -1,18 +1,11 @@
 import React, { Component, Fragment } from "react";
 import { connect } from "react-redux";
+import {addGameToCartAction, clearCartAction, removeGameFromCartAction} from "../redux/actions";
 
 class Cart extends Component {
   state = {
-    cartActive: false,
-    itemsInCart: 0
+    cartActive: true,
   };
-
-  componentWillReceiveProps(nextProps) {
-    const { allGames } = nextProps;
-    this.setState({
-      itemsInCart: this.findItemsInCartNumber(allGames)
-    });
-  }
 
   toggleCart = () => {
     this.setState({
@@ -20,36 +13,74 @@ class Cart extends Component {
     });
   };
 
-  findItemsInCartNumber = allGames => {
-    const gamesInCart = allGames.map(game => game.gameInCart);
-    let gamesInCartNumber = 0;
-    for (let i = 0; i < gamesInCart.length; i++) {
-      gamesInCart[i] && gamesInCartNumber++;
+  gamePrice = game => {
+    let gamePrice =  game.price ? game.price : 0;
+    let gameDiscount =  game.discount ? (game.discount / 100) : 1;
+    return gamePrice * gameDiscount;
+  }
+
+  sumOrderPrice = gamesInCart => {
+    let orderPrice = 0;
+    for(let i = 0; gamesInCart.length;i++) {
+      if(gamesInCart[i]) {
+        let gamePrice =  gamesInCart[i].price ? gamesInCart[i].price : 0;
+        let gameDiscount =  gamesInCart[i].discount ? (gamesInCart[i].discount / 100) : 1;
+        let gameFinalPrice = gamePrice * gameDiscount;
+        orderPrice += gameFinalPrice;
+      } else {
+        return orderPrice;
+      }
     }
-    return gamesInCartNumber;
+    return orderPrice;
+  }
+
+  clearCart = () => {
+    this.props.dispatch(clearCartAction());
+  };
+
+  removeGameFromCart = game => {
+    this.props.dispatch(removeGameFromCartAction(game));
   };
 
   render() {
     const { cartActive } = this.state;
+    const {allGames} = this.props;
+    const gamesInCart = allGames && allGames.filter(game => game.gameInCart === true);
+    const gamesInCartNumber = gamesInCart && gamesInCart.length;
     return (
-      <Fragment>
+      allGames ? <Fragment>
         <div className="cart__button" onClick={this.toggleCart}>
-          <div className="cart__button-basket">
-            <img className="game__img" src="images/basket.svg" alt="GOG.COM" />
-          </div>
-          <div className="cart__button-number">{this.state.itemsInCart}</div>
+          <img className="game__img" src="images/basket.svg" alt="GOG.COM" />
+          <div className="cart__button-number">{gamesInCartNumber}</div>
         </div>
-        <div className="cart__wrapper">
+        {cartActive && <div className="cart__wrapper">
           <div className="cart__top">
-            <div className="cart__top-desc">{this.state.itemsInCart}</div>
-            <div className="cart__top-price">price</div>
-            <div className="cart__top-button">
-              <button type="button">CLEAR CART</button>
+            <div className="cart__top-desc">
+              {gamesInCartNumber === 1 ? `${gamesInCartNumber} ITEM IN CART`: `${gamesInCartNumber} ITEMS IN CART`}
             </div>
+            <div className="cart__top-price">$ {this.sumOrderPrice(gamesInCart)}</div>
+            <button className="cart__top-button" type="button" onClick={this.clearCart}>CLEAR CART</button>
           </div>
-          <div className="cart__items" />
-        </div>
-      </Fragment>
+          <div className="cart__items">
+            {gamesInCart.map(game =>
+              <div className="cart__item" key={game.name}>
+                <img src={game.img} alt={game.name} className="cart__item-img"/>
+                <div className="cart__item-middle">
+                  <p className="cart__item-title">
+                    {game.name}
+                  </p>
+                  <span className="cart__item-remove"onClick={() => this.removeGameFromCart(game)}>
+                    Remove
+                  </span>
+                </div>
+                <p className="cart__item-price">
+                  $ {this.gamePrice(game)}
+                </p>
+              </div>
+            )}
+          </div>
+        </div>}
+      </Fragment> : null
     );
   }
 }

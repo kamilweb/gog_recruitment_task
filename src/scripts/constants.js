@@ -21,7 +21,7 @@ export const ALL_GAMES = [
     id: 2,
     name: "The settlers 2: gold  edition",
     img: "images/image3.jpg",
-    gameInCart: false,
+    gameInCart: true,
     price: 5.99,
     discount: false,
     owned: false
@@ -39,7 +39,7 @@ export const ALL_GAMES = [
     id: 4,
     name: "assassin’s creed:  director’s cut",
     img: "images/image5.jpg",
-    gameInCart: false,
+    gameInCart: true,
     price: 9.99,
     discount: false,
     owned: false

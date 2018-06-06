@@ -51,7 +51,7 @@
   justify-content: center;
   border-radius: 4px;
   height: 24px;
-  padding: 0 7px;
+  padding: 0 12px;
   border: 1px solid #a6a6a6;
   color: #404040;
   margin-left: 5px;
@@ -72,9 +72,6 @@
   &:hover {
     background: #7e3fc8;
     color: white;
-  }
-  &:focus {
-    outline: none;
   }
 }
 
