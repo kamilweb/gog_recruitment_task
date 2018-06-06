@@ -24,7 +24,7 @@ class Games extends Component {
                 <p className="game__name">{game.name}</p>
                 <div className="game__buttons">
                   {game.gameInCart ? (
-                    <div className="game__button game__button-incart">IN CART</div>
+                    <div className="game__button">IN CART</div>
                   ) : (
                     <Fragment>
                       {game.discount && (
@@ -36,7 +36,7 @@ class Games extends Component {
                           onClick={() => this.addGameToCart(game)}
                           className="game__button game__button-price"
                         >
-                          {`$${game.price}`}
+                          {`$ ${game.price}`}
                         </button>
                       )}
                     </Fragment>
