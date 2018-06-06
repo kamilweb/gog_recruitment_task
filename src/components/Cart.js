@@ -59,7 +59,7 @@ class Cart extends Component {
               <div className="cart__top-desc">
                 {gamesInCartNumber} {gamesInCartNumber === 1 ? "ITEM IN CART" : "ITEMS IN CART"}
               </div>
-              <div className="cart__top-price">$ {this.sumOrderPrice(gamesInCart)}</div>
+              <div className={`cart__top-price ${gamesInCartNumber === 0 ? 'add-margin' : ''}`}>$ {this.sumOrderPrice(gamesInCart)}</div>
               {gamesInCartNumber !== 0 && <button className="cart__top-button" type="button" onClick={this.clearCart}>
                 CLEAR CART
               </button>}
