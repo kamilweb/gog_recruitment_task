@@ -60,9 +60,9 @@ class Cart extends Component {
                 {gamesInCartNumber} {gamesInCartNumber === 1 ? "ITEM IN CART" : "ITEMS IN CART"}
               </div>
               <div className="cart__top-price">$ {this.sumOrderPrice(gamesInCart)}</div>
-              <button className="cart__top-button" type="button" onClick={this.clearCart}>
+              {gamesInCartNumber !== 0 && <button className="cart__top-button" type="button" onClick={this.clearCart}>
                 CLEAR CART
-              </button>
+              </button>}
             </div>
             <div className="cart__items">
               {gamesInCart.map(game => (

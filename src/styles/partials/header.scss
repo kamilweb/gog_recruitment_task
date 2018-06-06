@@ -47,6 +47,7 @@ header {
 .cart__top {
   display: flex;
   padding: 10px 9px 9px 5px;
+  min-height: 61px;
 }
 
 .cart__top-desc {
@@ -61,7 +62,6 @@ header {
   font-weight: 700;
   font-size: 15px;
   margin-top: 12px;
-  margin-right: 9px;
 }
 
 .cart__top-button {
@@ -72,6 +72,7 @@ header {
   border-radius: 4px;
   padding: 11px 28px;
   cursor: pointer;
+  margin-left: 9px;
 }
 
 .cart__item {
