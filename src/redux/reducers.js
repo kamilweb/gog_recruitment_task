@@ -21,15 +21,16 @@ export const shoppingCart = (state = initialState.gamesState, { type, changedGam
       });
       return { allGames: updatedState };
 
-    // case CLEAR_CART:
-    //   const clearedCart = state.allGames.map(game =>
-    //       ...game,
-    //       game.gameInCart: false
-    //     }
-    //   )
-    //   console.log(clearedCart)
-    //   return {allGames: clearedCart};
-    //
+    case CLEAR_CART:
+      const clearedState = state.allGames.map(game => {
+        if(game.gameInCart === true) {
+          game.gameInCart = false;
+          return game;
+        }
+        return game;
+      });
+      return {allGames: clearedState};
+
     default:
       return state;
   }

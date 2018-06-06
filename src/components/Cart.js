@@ -1,10 +1,10 @@
 import React, { Component, Fragment } from "react";
 import { connect } from "react-redux";
-import {addGameToCartAction, clearCartAction, removeGameFromCartAction} from "../redux/actions";
+import {clearCartAction, removeGameFromCartAction} from "../redux/actions";
 
 class Cart extends Component {
   state = {
-    cartActive: true,
+    cartActive: false,
   };
 
   toggleCart = () => {

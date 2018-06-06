@@ -24,6 +24,6 @@ export const removeGameFromCartAction = (game) => ({
   },
 });
 
-export const clearCartAction = (gamesInCart) => ({
+export const clearCartAction = () => ({
   type: CLEAR_CART,
 });
