@@ -17,7 +17,7 @@ export const addGameToCartAction = game => ({
 });
 
 export const removeGameFromCartAction = game => ({
-  type: ADD_GAME_TO_CART,
+  type: REMOVE_GAME_FROM_CART,
   changedGame: {
     ...game,
     gameInCart: false
